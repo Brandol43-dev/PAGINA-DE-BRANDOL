@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carlos Méndez | Ciberseguridad</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+      animation: fadeInBody 1s ease-in-out;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      animation: slideDown 0.8s ease forwards;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #00ffff;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to bottom, #1c1c1c, #2c3e50);
+      animation: fadeUp 1.5s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #00ffff;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        text-shadow: 0 0 10px #00ffff;
+      }
+      50% {
+        text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+      }
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #ccc;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInSection 1.5s ease-in-out;
+    }
+
+    @keyframes fadeInSection {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #00ffff;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #00ffff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      font-size: 14px;
+      margin-top: 40px;
+      animation: fadeInBody 1s ease-in;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 36px;
+      }
+
+      h3 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Carlos Méndez</h1>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Especialista en Ciberseguridad</h2>
+    <p>Protegiendo tus datos, sistemas y reputación desde República Dominicana 🇩🇴</p>
+  </div>
+
+  <section id="sobre-mi">
+    <h3>Sobre mí</h3>
+    <div class="card">
+      <p>
+        Soy un técnico en ciberseguridad con más de 5 años de experiencia asegurando redes, sistemas y plataformas digitales. 
+        Trabajo con empresas de todos los tamaños para blindar sus infraestructuras tecnológicas ante ataques cibernéticos.
+      </p>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <h3>Experiencia</h3>
+    <div class="card">
+      <strong>SeguriTech RD (2021 - Presente)</strong>
+      <p>Auditorías de seguridad, configuraciones de firewalls, y respuesta ante incidentes.</p>
+    </div>
+    <div class="card">
+      <strong>Consultor Independiente (2019 - 2021)</strong>
+      <p>Capacitación a equipos técnicos, pruebas de penetración y asesoría en infraestructura segura.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h3>Contacto</h3>
+    <div class="card">
+      <p>📧 <a href="mailto:carlos.mendez@correo.com">carlos.mendez@correo.com</a></p>
+      <p>🔗 <a href="https://linkedin.com/in/carlosmendez" target="_blank">LinkedIn</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Carlos Méndez. Hecho con 💻 y seguridad.
+  </footer>
+
+</body>
+</html>
